@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 abstract class IAppColors {
+  Color get title;
+  Color get subTitle;
   Color get primary;
   Color get buttonDisabled;
   Color get textDisabled;
@@ -34,4 +36,10 @@ class AppColors implements IAppColors {
   Color get textEnabled => const Color(0xFFFFFFFF);
   @override
   Color get border => const Color(0xFFE9E9EC);
+
+  @override
+  Color get title => const Color(0xFF000000);
+
+  @override
+  Color get subTitle => const Color(0xFFFF2400);
 }
