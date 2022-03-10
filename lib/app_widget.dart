@@ -14,7 +14,7 @@ class AppWidget extends StatelessWidget {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'João Parking',
-        theme: ThemeData(primarySwatch: Colors.green),
+        // theme: ThemeData(primarySwatch: Colors.green),
         initialRoute: '/splash_page',
         onGenerateRoute: RouteGenerator.generateRoute,
       );

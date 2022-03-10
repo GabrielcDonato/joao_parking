@@ -18,7 +18,7 @@ class AppTextStyles implements IAppTextStyles {
   @override
   TextStyle get buttonBackgroundColor => GoogleFonts.inter(
         fontSize: 14,
-        color: AppTheme.colors.background,
+        color: AppTheme.colors.primary,
         fontWeight: FontWeight.bold,
       );
   @override
