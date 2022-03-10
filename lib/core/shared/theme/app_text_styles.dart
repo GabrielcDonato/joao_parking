@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'theme.dart';
 
 abstract class IAppTextStyles {
+  TextStyle get title;
+  TextStyle get subTitle;
   TextStyle get label;
   TextStyle get input;
   TextStyle get hint;
@@ -47,6 +49,19 @@ class AppTextStyles implements IAppTextStyles {
   TextStyle get label => GoogleFonts.inter(
         fontSize: 16,
         color: AppTheme.colors.textColor,
+        fontWeight: FontWeight.bold,
+      );
+
+  @override
+  TextStyle get title => GoogleFonts.inter(
+        fontSize: 28,
+        color: AppTheme.colors.primary,
+        fontWeight: FontWeight.bold,
+      );
+  @override
+  TextStyle get subTitle => GoogleFonts.inter(
+        fontSize: 22,
+        color: AppTheme.colors.badColor,
         fontWeight: FontWeight.bold,
       );
 }

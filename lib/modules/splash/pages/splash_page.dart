@@ -10,7 +10,16 @@ class SplashPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.colors.background,
       body: Center(
-        child: Image.asset(AppImages.splashImage),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              AppImages.splashImage,
+            ),
+            Text("João").title,
+            Text("Parking").subTitle,
+          ],
+        ),
       ),
     );
   }
