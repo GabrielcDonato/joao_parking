@@ -9,10 +9,10 @@ extension TextExt on Text {
       );
   Text get title => Text(
         this.data!,
-        style: AppTheme.textStyles.title,
+        style: AppTheme.textStyles.titleSplash,
       );
   Text get subTitle => Text(
         this.data!,
-        style: AppTheme.textStyles.subTitle,
+        style: AppTheme.textStyles.subTitleSplash,
       );
 }
